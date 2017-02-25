@@ -31,7 +31,7 @@ function showResults(results){
   var html = "";
   //console(html);
   $.each(results, function(index,value){
-    html += '<p>' + '<img src="' + value.snippet.thumbnails.medium.url + '" >' + value.snippet.title + '</p>';
+    html += '<h3>' + value.snippet.title + '</h3>' + '<img src="' + value.snippet.thumbnails.medium.url + '" >' + '<br/>';
     console.log(value.snippet.title);
   });
   //console(value.snippet.title);
